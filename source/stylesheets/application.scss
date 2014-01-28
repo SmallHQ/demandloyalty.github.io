@@ -1,0 +1,28 @@
+@import 'skeleton';
+@import 'universal';
+
+h1, h2 {
+  font-family: $nuvo;
+  font-weight: 700;
+}
+h1 { font-size: 30px }
+h2 { font-size: 20px }
+
+p {
+  font-family: $nuvo;
+  font-weight: 400;
+}
+
+#headline_banner {
+  padding-top: 200px;
+
+  #headline {
+
+  }
+}
+
+#form_banner {
+  #form {
+
+  }
+}
