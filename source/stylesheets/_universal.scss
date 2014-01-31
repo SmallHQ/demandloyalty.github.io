@@ -10,13 +10,12 @@
 $helvetica: HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
 $nuvo: "ff-nuvo-web-pro", $helvetica;
 $pictos: 'Pictos';
-$bg: #FFF;
-$text: #333;
-$bold_text: #222;
+$light_grey: #EFF4F8;
+$dark_grey: #293E55;
+$blue: #3FB1E7;
+$white: #f0f4f6;
 
 body {
-  background-color: $bg;
-  color: $text;
   font-family: $helvetica;
   font-weight: normal;
   font-size: 16px;
@@ -27,24 +26,9 @@ input[type="submit"] {
   -webkit-appearance: none;
 }
 
-/* BEGIN TYPOGRAPHY */
-a {
-  color: $text;
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
-  &:active {
-    color: $text;
-  }
-  &:visited {color: $text}
-}
-/* END TYPOGRAPHY */
-
 /* BEGIN HEADER BAR */
 #header_bar_banner {
-  background-color: #222;
+  background-color: $dark_grey;
   position: fixed;
   width: 100%;
   z-index: 9999;
@@ -56,13 +40,15 @@ a {
     @media only screen and (max-width: 767px) {height: 100px}
 
     #logo {
-      color: #f7f7f7;
+      color: $white;
       font-family: $nuvo;
       font-size: 20px;
+      font-weight: bold;
       float: left;
       width: 300px;
-      height: 24px;
-      padding: 12px 0px 14px;
+      line-height: 46px;
+      width: 300px;
+      padding-top: 4px;
 
       /* All Mobile Sizes (devices and browser) */
       @media only screen and (max-width: 767px) {
@@ -73,24 +59,24 @@ a {
 
     nav {
       float: right;
+      padding-top: 8px;
 
       a {
-        color: #bcc3cc;
-        font-size: 15px;
-        line-height: 24px;
-        padding: 13px 0px;
+        border: 2px solid #8B8D96;
+        border-radius: 2px;
+        color: $white;
         display: inline-block;
+        font-family: $nuvo;
+        font-size: 14px;
         margin-left: 28px;
-        transition: color .2s;
-
-        &#trial_button {
-          color: #84c1b1;
-          font-weight: bold;
-        }
+        padding: 7px 16px 3px;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all .2s;
 
         &:hover {
-          color: #5799d6 !important;
-          text-decoration: none;
+          background-color: rgba(255,255,255,.08);
+          border: 2px solid $blue;
         }
 
         /* All Mobile Sizes (devices and browser) */

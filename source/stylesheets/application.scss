@@ -1,23 +1,25 @@
 @import 'skeleton';
 @import 'universal';
 
-h1, h2 {
-  font-family: $nuvo;
-  font-weight: 700;
-}
-h1 { font-size: 30px }
-h2 { font-size: 20px }
-
 p {
-  font-family: $nuvo;
+  font-family: $helvetica;
   font-weight: 400;
 }
 
 #headline_banner {
-  padding-top: 200px;
+  background-color: #6cb5f4;
+  padding: 140px 0;
 
   #headline {
-
+    h1, h2 {
+      color: #fff;
+      font-family: $nuvo;
+      font-weight: 700;
+      text-align: center;
+      text-shadow: 0px 1px 1px rgba(0,0,0,.1);
+    }
+    h1 { font-size: 40px; line-height: 44px; margin-bottom: 20px; }
+    h2 { font-size: 24px; line-height: 32px; }
   }
 }
 
